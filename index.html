@@ -159,9 +159,42 @@
         width: 20%; /* Sets the width of the logo */
         margin-left:40%;
         margin-right:40%;
-    }
+        }
 
+        @media (max-width: 768px) {
+            .header, .section, .service-box, .service-box2, .logo img {
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+            .header h1, .headerDark h1, .header h2, .headerDark h2 {
+                font-size: 24px; /* Smaller font size */
+            }
+            .service-box, .service-box2 {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+            .logo img {
+                width: 50%; /* Larger logo for better visibility */
+            }
+        }
 
+        /* For mobile phones */
+        @media (max-width: 480px) {
+            .header, .section, .service-box, .service-box2, .logo img {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+            .header h1, .headerDark h1, .header h2, .headerDark h2 {
+                font-size: 20px; /* Even smaller font size */
+            }
+            .service-box, .service-box2 {
+                margin-left: 2%;
+                margin-right: 2%;
+            }
+            .logo img {
+                width: 80%; /* Even larger logo for smaller screens */
+            }
+        }
 
     </style>
 </head>
